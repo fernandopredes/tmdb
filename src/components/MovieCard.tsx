@@ -12,7 +12,7 @@ type Props = {
 const MovieCard = ({movie, showLink = true}: Props) => {
   return (
     <div className="movie-card">
-      <img src={imageUrl + movie.poster_path} alt="" />
+      <img src={imageUrl + movie.poster_path} alt={movie.title} />
       <h2>{movie.title}</h2>
       <p>
         <FaStar /> {movie.vote_average}

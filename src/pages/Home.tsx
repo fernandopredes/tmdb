@@ -8,11 +8,9 @@ const moviesURL = import.meta.env.VITE_API
 const apiKey = import.meta.env.VITE_API_KEY
 
 
-type Props = {
 
-}
 
-const Home = (props: Props) => {
+const Home = () => {
 
   const [topMovies, setTopMovies] = useState<any[]>([])
 
