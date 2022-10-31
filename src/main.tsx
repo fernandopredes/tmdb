@@ -15,7 +15,7 @@ import Search from './pages/Search';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route element={<App />}>
           <Route path='/' element={<Home />} />
