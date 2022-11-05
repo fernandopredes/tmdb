@@ -23,7 +23,7 @@ function Search() {
 
    }
 
-  //useEffect que carrega só uma vez chama o fetch
+  //useEffect que monitora a query
   useEffect(() => {
 
     const searchwithquery = `${searchUrl}?${apiKey}&query=${query}`
